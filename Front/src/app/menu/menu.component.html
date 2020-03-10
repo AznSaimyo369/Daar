@@ -1,0 +1,13 @@
+<form class="menu-search-form" (submit)="onSubmit()">
+    <div class="row">
+        <div class="col-md-4">
+            <a [routerLink]="''"><img src="assets/UPMC_Sorbonne_Universites.png"></a>
+        </div>
+        <div class="col-md-8">
+            <mat-form-field class="menu-search-width">
+                <mat-label>Book</mat-label>
+                <input matInput placeholder="Ex. Livre 1" (keyup)="onKey($event)">
+            </mat-form-field>
+        </div>
+    </div>
+</form>

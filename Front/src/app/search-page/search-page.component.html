@@ -1,0 +1,14 @@
+<form class="search-form" (submit)="onSubmit()">
+    <div class="logo">
+        <img src="assets/UPMC_Sorbonne_Universites.png">
+    </div>
+    <div class="search">
+        <mat-form-field class="search-width">
+            <mat-label>Book</mat-label>
+            <input matInput placeholder="Ex. Livre 1" (keyup)="onKey($event)">
+        </mat-form-field>
+    </div>
+    <div class="search-button">
+        <button mat-raised-button type="submit">Search</button>
+    </div>
+</form>
